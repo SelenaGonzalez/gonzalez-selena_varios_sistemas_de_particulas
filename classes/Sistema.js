@@ -2,12 +2,12 @@ class Sistema {
   constructor() {
     this.pos = createVector(width / 2, height / 2);
     this.ps = [];
-    this.t = random(100);
-    this.color = color(random(100, 255), random(255), 0);
+    this.t = random(10);
+    this.color = color(random(100, 255), random(255), 255);
   }
   update() {
     // 0. Aumentar el tiempo
-    this.t += 0.01;
+    this.t += 0.02;
 
     // 1. Actualización de posición
     this.pos.x = map(noise(this.t), 0, 1, 0, width);

@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 20);
+  background(0, 50);
   s.update();
   s.display();
   p.update();

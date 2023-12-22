@@ -3,11 +3,11 @@ class Particula {
     this.pos = createVector(_x, _y);
     this.lifespan = Math.ceil(random(10, 100));
     this.isAlive = true;
-    this.side = Math.ceil(random(3, 15));
+    this.side = Math.ceil(random(10, 15));
     this.color = _color;
   }
   update() {
-    this.r = random(100);
+    this.r = random(10);
 
     if (this.r < 20) {
       // hacia arriba
@@ -19,7 +19,7 @@ class Particula {
       // hacia abajo
       this.pos.y += this.side;
     } else {
-      // hacia izquierda
+      // hacia laizquierda
       this.pos.x -= this.side;
     }
 
